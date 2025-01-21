@@ -7,7 +7,14 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    CodeQuiz: typeof import('./src/components/Quiz/codeQuiz.vue')['default']
+    Dashboard: typeof import('./src/components/Dashboard.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    Home: typeof import('./src/components/Home.vue')['default']
+    ImplementCode: typeof import('./src/components/Quiz/implementCode.vue')['default']
+    Login: typeof import('./src/components/Auth/login.vue')['default']
+    Navigation: typeof import('./src/components/Navigation.vue')['default']
+    Register: typeof import('./src/components/Auth/register.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
